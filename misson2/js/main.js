@@ -8,16 +8,20 @@ const input = document.createElement("input");
 input.id = "nameInput";
 input.placeholder = "이름을 입력하세요";
 
-const button = document.createElement("button");
-button.id = "addBtn";
-button.innerText = "등록";
+const addBtn = document.createElement("button");
+addBtn.id = "addBtn";
+addBtn.innerText = "등록";
+
+const deleteBtn = document.createElement("button");
+deleteBtn.id = "deleteBtn";
+deleteBtn.innerText = "삭제";
 
 const list = document.createElement("ul");
 list.id = "guestList";
 
 const guestbook = [];
 
-button.addEventListener("click", () => {
+addBtn.addEventListener("click", () => {
   const name = input.value.trim();
   if (name) {
     guestbook.push({ name });
@@ -27,8 +31,20 @@ button.addEventListener("click", () => {
   }
 });
 
+deleteBtn.addEventListener("click", () => {
+  if (guestbook.length > 0) {
+    guestbook.pop(); 
+    list.removeChild(list.lastChild);
+    console.log(guestbook);
+  } else {
+    alert("삭제할 항목이 없습니다!");
+  }
+});
+
+
 app.appendChild(createHeader());
 app.appendChild(input);
-app.appendChild(button);
+app.appendChild(addBtn);
+app.appendChild(deleteBtn);
 app.appendChild(list);
 app.appendChild(createFooter());
