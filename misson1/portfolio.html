@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나의 포트폴리오</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+</head>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  };
+  const htmlEl = document.documentElement;
+  const label = document.getElementById("mode-label");
+
+  function toggleDarkMode() {
+    htmlEl.classList.toggle("dark");
+    label.textContent = htmlEl.classList.contains("dark") ? "다크" : "라이트";
+  };
+
+</script>
+<style>
+  input:checked+div+.dot {
+    transform: translateX(1.25rem);
+  }
+</style>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen  transition-colors duration-500">
+  <nav id="top" class="h-52 w-full flex items-center justify-between p-8">
+    <div>
+      <h1 class="text-4xl font-bold">서명진</h1>
+      <p class="mt-4 text-lg">Backend developer</p>
+    </div>
+    <div>
+      <ul class="flex gap-4 ">
+        <li><a href="https://github.com/myoungjinseo"><iconify-icon icon="mdi:github" class="p-4 text-center h-16"
+              width="50" height="50"></iconify-icon></a></li>
+        <li><a href="https://velog.io/@myoungjinseo/posts"><iconify-icon icon="mdi:book-open-variant"
+              class="p-4 text-center h-16" width="50" height="50"></iconify-icon></a></li>
+        <li><a href="introduce.html"><iconify-icon icon="mdi:home" class="p-4 text-center h-16" width="50"
+              height="50"></iconify-icon></a></li>
+      </ul>
+      <p class="mt-4">email : smjsih@naver.com</p>
+      <p>Phone : 010-8229-5673</p>
+    </div>
+  </nav>
+
+  <!-- Dark Mode Toggle -->
+  <div class="text-right mx-8">
+    <label for="mode-labe" class="inline-flex items-center cursor-pointer">
+      <span class="mr-2 text-sm text-gray-700 dark:text-gray-300">Dark Mode</span>
+      <div class="relative">
+        <input type="checkbox" id="mode-labe" class="sr-only" onclick="toggleDarkMode()" />
+        <div class="w-10 h-5 bg-gray-300 rounded-full shadow-inner dark:bg-gray-600"></div>
+        <div class="dot absolute left-1 top-1 bg-white w-3 h-3 rounded-full transition transform"></div>
+      </div>
+    </label>
+  </div>
+
+
+  <!-- Experience -->
+  <h1 class="text-4xl font-bold px-8 text-center mt-8">Experience</h1>
+  <div class="border-t border-dashed border-gray-400 my-4 mx-8"></div>
+  <nav class="flex items-center justify-between px-8 flex-col">
+    <div class="flex justify-between items-start w-full mt-4">
+      <div class="w-1/4">
+        <h3 class="font-bold"> Google Developer Student Clubs</h3>
+        <p class="text-gray-400">Backend developer</p>
+        <p class="text-gray-400">2023.10 - 2024.01 </p>
+      </div>
+
+      <div class="w-3/4 ">
+        <h2 class="font-bold md-2">DontWorry 2023.02 - 2023.04</h2>
+        <p class="leading-relaxed">1. 프로젝트 개요<br>
+          학교 폭력 피해자들을 위해 기록과 신고 방안을 제공해주는 웹 어플리케이션<br><br>
+
+          2. 사용 기술<br>
+          Spring Boot , Java, Spring JPA, MySQL, GCP, GCS</br><br>
+
+          3. 담당 업무<br>
+          GCS Signed URL 을 통한 이미지 저장 기법: <br>
+        <ul class="list-disc list-inside">
+          <li>MultipartFile로 다중 파일 업로드</li>
+          <li>InputStream을 통해 메모리 사용량 최소화</li>
+          <li>GCS 버킷에 퍼블릭 액세스를 차단하고, 서버가 인증된 계정 권한으로 직접 파일을 업로드한 뒤, 임의의 저장 경로를 생성하여 관리</li>
+        </ul>
+        QueryDSL를 이용한 쿼리문 작성
+        <ul class="list-disc list-inside">
+          <li>Projections.filds 를 통해 DTO 데이터를 매핑</li>
+          <li>복잡한 조인 및 조건 쿼리를 효율적으로 처리</li>
+        </ul>
+        인터셉터를 이용한 쿠키 + 세션 로그인 : <br>
+        <ul>
+          <li>Interceptor를 사용하여 상세 로그 및 오류 추척을 효율적으로 처리</li>
+          <li>사용자 로그아웃 및 세션 만료를 즉시 반영 GCP를 이용한 서버 배포</li>
+        </ul>
+        <br>
+        4. 성장한 부분 <br>
+        <ul class="list-disc list-inside">
+          <li>고객의 편의성을 최우선으로 고려하여, 초기에는 개발자 관점에서 완성도에 집중하였으나, 점차 고객 입장에서 기능을 설계하는 중요성을 깨달았습니다.</li>
+          <li>BE 개발자가 단독으로 작업하여 개발 외적으로는 프론트엔드 파트너와 지속적인 피드백 및 버그 리포팅을 통해 협업 과정에서의 커뮤니케이션 능력을 크게 향상시킬 수 있었습니다.</li>
+        </ul>
+        깃허브 링크 : <a href="https://github.com/GDSC-SKHU/2023-DontWorrySolutionChallenge-BackEnd"
+          class="hover:text-black text-blue-500 ">https://github.com/GDSC-SKHU/2023-DontWorrySolutionChallenge-BackEnd</a><br><br>
+        <h3 class="font-bold">객체지향 스터디 2023.05 - 2023.06</h3>
+        스프링 입문을 위한 자바 객체 지향의 원리와 이해를 통해 객체지향 내용 정리 및 발표 <br>
+        깃허브 링크 : <a href="https://github.com/GDSC-SKHU/OOP-Study"
+          class="hover:text-black text-blue-500">https://github.com/GDSC-SKHU/OOP-Study</a> <br><br>
+
+        <h3 class="font-bold">FirstStep</h3>
+        1. 프로젝트 개요 <br>
+        20살이 된 후배들을 위한 서비스 (해커톤) <br><br>
+
+        2. 사용 기술 <br>
+        Spring Boot , Java, Spring JPA, MySQL, AWS <br><br>
+
+        3. 담당 업무 <br>
+        <ul class="list-disc list-inside">
+          <li> EC2 배포</li>
+          <li>Spring Security + JWT 로그인 구현</li>
+        </ul>
+        <br>
+        4. 성장한 부분 <br>
+        <ul class="list-disc list-inside">
+          <li>백엔드 협업 자체가 처음이었던 부분으로 소통 자체에 문제가 발생하여, 이후 프로젝트에서는 협업 능력을 향상하기 위해 노력했습니다.</li>
+          <li>짧은 시간에 더 많은 성과를 내야하는 해커톤 대회로서, 시간 분배에 중요도를 느끼게 되었습니다.</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="border-t border-dashed border-gray-400 mt-6 md-4 mx-8"></div>
+
+  <nav class="flex items-center justify-between px-8 flex-col">
+    <div class="flex justify-between items-start w-full mt-4">
+      <div class="w-1/4">
+        <h3 class="font-bold"> 원티드 프리온보딩 인턴십</h3>
+        <p class="text-gray-400">Backend developer</p>
+        <p class="text-gray-400">2023.10 ~ 2023.11 </p>
+      </div>
+
+      <div class="w-3/4 ">
+        <p class="leading-relaxed">
+        <h2 class="font-bold">FundFolio 2023.11 - 2023.11</h2>
+        1. 프로젝트 개요 <br>
+        예산 관리 어플리케이션 (기업 과제형 프로젝트) <br><br>
+
+        2. 사용 기술 <br>
+        Spring Boot , Java, Spring JPA, MySQL, Spring Security, JWT <br><br>
+
+        3. 담당 업무 <br>
+        JWT 기반 인증 시스템 구축 <br>
+        <ul class="list-disc list-inside">
+          <li>예외 상황에 대한 일관성 있는 예외 처리 및 표준화된 응답 설계</li>
+        </ul>
+        QueryDSL를 이용한 쿼리문 작성: <br>
+        <ul class="list-disc list-inside">
+          <li>Projections.filds 를 통해 DTO 데이터를 매핑</li>
+          <li>복잡한 조인 및 조건 쿼리를 효율적으로 처리 스케줄러 개발</li>
+          <li>API에서 추출한 데이터를 매일 자동으로 업데이트할 수 있도록 스케줄러 로직을 작성하여 주기적으로 데이터 갱신</li>
+        </ul>
+        예산 설정 및 설계 서비스 <br>
+        <ul class="list-disc list-inside">
+          <li>월별 총 예산을 설정</li>
+          <li>카테고리별 예산을 설계(=추천)하여 사용자의 과다 지출을 방지. 지출 기록 서비스</li>
+          <li>사용자는 지출을 금액, 카테고리 등을 지정하여 등록 , 수정 및 삭제 지출 컨설팅</li>
+          <li>월별 설정한 예산을 기준으로 오늘 소비 가능한 지출 을 알려줌</li>
+          <li>매일 발생한 지출을 카테고리 별로 안내받습니다.</li>
+        </ul>
+        지출 통계 <br>
+        <ul class="list-disc list-inside">
+          <li>지난 달 대비, 지난 요일 대비, 다른 유저 대비 등 여러 기준 카테고리 별 지출 통계를 확인</li>
+        </ul>
+        4. 성장한 부분<br>
+        <ul class="list-disc list-inside">
+          <li>많은 내용을 짧은 시간내에 만드는 과정에서 빠르게 개발하는 방법을 배울 수 있었습니다.</li>
+          <li>스프링 시큐리티 + JWT 로그인에 대해 많이 배울 수 있었습니다. 더 나아가 로그인에 대해 더 구체적으로 들어가야 겠다는 생각이 들었습니다.</li>
+        </ul>
+        깃허브 링크 : https://github.com/myoungjinseo/FundFolio <br><br>
+
+        YamYam 2023.11 - 2023.11 <br>
+        1. 프로젝트 개요 <br>
+        지리기반 맛집 추천 웹 서비스 <br><br>
+
+        2. 사용 기술 <br>
+        Spring Boot , Java, Spring JPA, MySQL <br><br>
+
+        3. 담당 업무 <br>
+        공공데이터 포털 이용 <br>
+        <ul class="list-disc list-inside">
+          <li>경기도 일반 음식점 외부 API (탕류, 일식, 중식) 3개의 API를 restTemplate을 사용하여 연결</li>
+          <li>ObjectMapper를 활용하여 JSON 데이터를 추출</li>
+        </ul>
+        스케줄러 개발
+        <ul class="list-disc list-inside">
+          <li>API에서 추출한 데이터를 매일 자동으로 업데이트할 수 있도록 스케줄러 로직을 작성하여 주기적으로 데이터 갱신</li>
+        </ul>
+        4. 성장한 부분<br>
+        <ul class="list-disc list-inside">
+          <li>깃허브 이슈와 PR 및 매일 저녁마다 코드리뷰 회의를 하면서 많은 부분 배울 수 있었고, 여러 의견을 수용하고 대응하면서 코드를 어떻게 짜야할 지 고민하게 되었습니다.</li>
+          <li>기존에는 개발 자료가 많은 라이브러리를 이용했지만, 여러 회의를 통해 라이브러리 선정 기준을 가지게 되었습니다.</li>
+        </ul>
+        깃허브 링크 : https://github.com/pre-onboarding/yamyam <br><br>
+
+        Social media integrated feed 2023.10 - 2023.10 <br>
+        1. 프로젝트 개요<br>
+        여러 SNS에서 게시물들을 나만의 해시태그를 통해 확인할 수 있는 통합 Feed 어플리케이션
+        (기업 과제형 프로젝트) <br><br>
+
+        2. 사용 기술<br>
+        Spring Boot , Java, Spring JPA, MySQL <br><br>
+
+        3. 담당 업무<br>
+        페이징 처리 구현 및 페이징 단순화 작업<br>
+        QueryDSL를 이용한 쿼리문 작성<br>
+        <ul class="list-disc list-inside">
+          <li>Projections.filds 를 통해 DTO 데이터를 매핑</li>
+          <li>복잡한 조인 및 조건 쿼리를 효율적으로 처리</li>
+        </ul>
+        <br>
+
+        4. 성장한 부분 <br>
+        <ul class="list-disc list-inside">
+          <li>기업 과제형 프로젝트로 잘 가추어진 기획서를 보고 나서 개발 계획을 짜면서 개발을 할 때 기획을 미리 정량화할 필요를 느꼈습니다.</li>
+          <li>협업을 어떻게 해야할 지를 좀 더 느낄 수 있었던 활동이었으며, 각자 배운 내용이 다르고 방식이 다르기 때문에 맞쳐나가는 과정에서 힘든 부분이 많았던 프로젝트였습니다. 그러한 과정에서
+            여러가지 방식을 미리 고민하면서 이해 할 필요와 나의 주장을 확실히 할 필요를 느꼈습니다.</li>
+        </ul>
+        깃허브 링크 : https://github.com/pre-onboarding/Social-media-integrated-feed
+        </p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="border-t border-dashed border-gray-400 mt-6 md-4 mx-8"></div>
+
+  <nav class="flex items-center justify-between px-8 flex-col">
+    <div class="flex justify-between items-start w-full mt-4">
+      <div class="w-1/4 pr-16">
+        <h3 class="font-bold"> IT&미디어콘텐츠경진대회(IT부분) 교내 경진대회 장려상</h3>
+        <p class="text-gray-400">Backend developer</p>
+        <p class="text-gray-400">2023.07 ~ 2023.09</p>
+      </div>
+
+      <div class="w-3/4 ">
+        <p class="leading-relaxed">
+        <h3 class="font-bold"> SKHU-CLOCK</h3><br>
+        1. 프로젝트 개요<br>
+        교내 종강시계 및 다양한 정보를 주는 사이트<br>
+        <br>
+        2. 사용 기술<br>
+        Spring Boot , Java, Spring JPA, MySQL, AWS, Docker, Swagger<br>
+        <br>
+        3. 담당 업무<br>
+        날씨 정보 API<br>
+        - 공공데이터 포털 단기 예보 JSON 추출<br>
+        근처 식당 API<br>
+        - 카카오맵 API를 통해 카테고리 Seach OPENAPI 연동<br>
+        - JSON 정보 추출<br>
+        - 주기적으로 스케줄러 작성<br>
+        QueryDSL를 이용한 쿼리문 작성:<br>
+        - Projections.filds 를 통해 DTO 데이터를 매핑<br>
+        - 복잡한 조인 및 조건 쿼리를 효율적으로 처리<br>
+        깃허브 액션을 이용한 자동화 시스템<br>
+        - Docker를 이용하여 이미지 빌드<br>
+        - 디스코드 에러 봇 설정<br>
+        <br>
+        4. 성장한 부분<br>
+        - 깃허브 이슈,PR 등을 적극적으로 활용하여 백엔드간의 협업에 조금 더 성장할 수 있었습니다.<br>
+        - 백엔드와 프론트 간의 협업을 통해서 소통의 차이가 있을 수 있다는 것을 깨달았고, BE 측면에<br>
+        서 협업에 성장하기 위해서는 문서화 작업을 꼼꼼히 해야겠다고 느꼈습니다.<br>
+        - 개발자 입장에선 서비스가 완성되었지만, 사용자 입장에서는 많이 부족할 때가 많다는 것을 알<br>
+        게 되었습니다. BE 측면에서 완성도를 높이기 위해선 세부 기능에 다양화를 해야겠다고 느꼈습니다.<br>
+        <br>
+        깃허브 링크 : https://github.com/skhu-clock/skhu-clock-back</p>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="border-t border-dashed border-gray-400 mt-6 md-4 mx-8"></div>
+  <nav class="flex items-center justify-between px-8 flex-col">
+    <div class="flex justify-between items-start w-full mt-4">
+      <div class="w-1/4 pr-16">
+        <h3 class="font-bold">개발자들</h3>
+        <p class="text-gray-400">Backend developer</p>
+        <p class="text-gray-400">2022.03 ~ 2022.08</p>
+      </div>
+
+      <div class="w-3/4 ">
+        <p class="leading-relaxed"> HelpCS 2022.08 - 2022.08<br>
+          1. 프로젝트 개요<br>
+          오늘의 개발 지식 서비스<br>
+          <br>
+          2. 사용 기술<br>
+          Spring Boot , Java, Spring JPA, MySQL<br>
+          <br>
+          3. 담당 업무<br>
+          - Spring Security + JWT 로그인<br>
+          - 문제 CRUD<br>
+          - 유저 정보 API<br>
+          <br>
+          4. 성장한 부분<br>
+          - 첫 프로젝트여서 많은 실수가 있었고, 협업 자체도 처음이어서 많은 시간을 들이면서 회의를<br>
+          했습니다. 이러한 부분으로 인해 공부 방향성을 확실히 잡았습니다.<br>
+          - 배포까지는 실패한 프로젝트여서, 추후 배포에 중요도를 배운 프로젝트였습니다.<br>
+          <br>
+          깃허브 링크 : https://github.com/HelpCS/HelpCS_backend<br>
+          <br>
+          ● JPA 스터디 2022.04 - 2022.07<br>
+          자바 ORM 표준 JPA 프로그래밍을 통해 각자 블로그에 내용을 정리하였습니다.
+        </p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="border-t border-dashed border-gray-400 mt-6 md-4 mx-8"></div>
+  <nav class="flex items-center justify-between px-8 flex-col">
+    <div class="flex justify-between items-start w-full mt-4">
+      <div class="w-1/4 pr-16">
+        <h3 class="font-bold">SilverPlate</h3>
+        <p class="text-gray-400">Backend developer</p>
+        <p class="text-gray-400">2023.11 ~ 2024.02</p>
+      </div>
+
+      <div class="w-3/4 ">
+        <p class="leading-relaxed"> SilverPlate<br>
+          1. 프로젝트 개요<br>
+          식단 조절을 위한 웹 어플리케이션<br>
+          <br>
+          2. 사용 기술<br>
+          Spring Boot , Java, Spring JPA, MariaDB, Docker, AWS<br>
+          <br>
+          3. 담당 업무<br>
+          깃허브 액션을 이용한 자동화 시스템<br>
+          - Docker-compse를 이용하여 이미지 빌드<br>
+          - AWS ECR에서 이미지 업로드<br>
+          RestClient를 이용한 스케줄링<br>
+          - WebClient의 fluent API를 그대로 해서 RestTemplate의 인프라 사용<br>
+          - RestTemplate, WebClient, RestTemplate를 탐구<br><br>
+          
+          4. 성장한 부분<br>
+          - 기획 단계를 길게 가져가는 것이 오히려 프로젝트 진행에 독이 될 수 있음을 깨닫고, 모든 인원<br>
+          이 끝까지 참여하는 기획 확인 회의의 중요성을 인식하게 되었습니다.<br>
+          - GitHub 이슈 관리, PR, 코드 리뷰 과정을 경험하며 백엔드 간 협업 능력과 코드 품질 향상에<br>
+          힘썼습니다.<br>
+          - 프로젝트가 중도에 종료되었지만, 프론트엔드 및 백엔드 협업, CI/CD 환경 구축 등 다양한 실<br>
+          무 경험을 통해 개발자로서 한층 성장할 수 있었습니다.<br>
+          <br>
+          깃허브 링크 : https://github.com/silver-plate/SilverPlate-BE
+        </p>
+      </div>
+    </div>
+  </nav>
+
+  <div class="border-t border-dashed border-gray-400 mt-6 md-4 mx-8"></div>
+  <nav class="flex items-center justify-between px-8 flex-col">
+    <div class="flex justify-between items-start w-full mt-4">
+      <div class="w-1/4 pr-16">
+        <h3 class="font-bold">MyPick</h3>
+        <p class="text-gray-400">Backend developer</p>
+        <p class="text-gray-400">2024.08</p>
+      </div>
+
+      <div class="w-3/4 ">
+        <p class="leading-relaxed">
+        <p class="desc"> 개인 프로젝트<br>
+          1. 프로젝트 개요<br>
+          건강 관리를 도와주는 어플리케이션<br>
+          <br>
+          2. 사용 기술<br>
+          Spring Boot , Java, Spring JPA, MariaDB, Docker, AWS, Spring Batch, AWS RDS<br>
+          <br>
+          3. 담당 업무<br>
+          다중 예외에 대한 응답 구축<br>
+          - 예외 응답 클래스를 생성하고, 예외 핸들러를 수정하여 DTO의 여러 필드 예외에 한번에 응답<br>
+          깃허브 액션을 이용한 자동화 시스템<br>
+          - Docker-compse를 이용하여 이미지 빌드<br>
+          - AWS ECR에서 이미지 업로드<br>
+          Spring Batch 대용량 데이터 파이프라인 구축<br>
+          - Spring Batch를 이용하여 대용량 데이터를 효율적으로 Reader, Writer 배치 작업 구현<br>
+          - Chunk 기반 처리로 메모리 사용량을 최적화하고, 실패 시 재처리를 고려한 트랜잭션 관리 적<br>
+          용<br>
+          - 스케줄러를 연동하여 정해진 시간에 자동으로 배치 작업 수행<br>
+          ChatGPT를 활용한 개인 맞춤형 건강정보 추천 API 개발<br>
+          - 사용자 신체 정보(키, 몸무게, 나이, 활동량, 질병 등)를 기반으로 프롬프트를 생성하고,<br>
+          OpenAI API를 호출하여 맞춤형 영양 성분 정보 제공<br>
+          - ChatGPT 응답 결과를 JsonNode 파싱 및 가공하여 추천 정보를 추출 및 저장<br>
+          - 최초 요청 시 추천 정보 저장, 이후 요청 시 추천 정보 업데이트 처리로 데이터 일관성 관리<br>
+          - 비동기 HTTP 통신과 예외 처리로 API 안정성 강화<br>
+          - 시스템 역할 프롬프트 적용으로 답변 일관성 및 품질 향상<br>
+          JWT 기반 인증 시스템 구축<br>
+          - 예외 상황에 대한 일관성 있는 예외 처리 및 표준화된 응답 설계<br>
+          - UserPhysical과 OneToOne관계에서 지연 로딩이 동작하지 않는 N + 1 문제 해결<br>
+          - Redis Cashe 도입하여 로그인 성능 개선<br>
+          API 응답 속도 개선<br>
+          - 대용량 데이터 Page가 아닌 Slice로 5배 성능 개선<br>
+          - Redis Cashe 도입하여 로그인 성능 개선<br>
+          Multi Module 아키텍처 사용<br>
+          - 여러 모듈로 분리하여 코드의 재사용성을 높임<br>
+          - 종속성을 줄여주는 역할을 한다.<br>
+          <br>
+          4. 성장한 부분<br>
+          - 최근 주목받고 있는 AI를 활용하면서, 새로운 경험으로 인해 어려운 점도 많았습니다. 이러한<br>
+          활용 덕분에 개발 외적인 자료조사를 하지 않아도 되는 점이 좋았으며, 프롬프트에 예외성을 잡<br>
+          는 부분에서 많은 힘듦을 느꼈습니다<br>
+          - 스프링 배치, docker-compose에 대해서 새롭게 공부하게 되었고, jwt, 외부 api 연동 등 좀<br>
+          더 깊숙이 공부할 수 있던 기회가 되었습니다. 개인 프로젝트를 하기 때문에 완성에 목적을 두어<br>
+          급하게 하지 않아도 되는 점이 좋았으며, 완성보다는 배움을 목표로 프로젝트를 진행했습니다.<br>
+          <br>
+          깃허브 링크 : https://github.com/myoungjinseo/MyPick
+        </p>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <footer class="bg-gray-900 text-white text-center p-4 mt-4 flex-col mt-8">
+    <div class="flex items-center justify-between">
+      <div class="w-1/3"></div>
+      <div class="items-center w-1/3">
+        <small>© 2025 서명진 포트폴리오</small>
+        <p>이메일: smjsih@naver.com</p>
+      </div>
+      <div class="w-1/3 flex justify-end">
+        <button class="bg-indigo-500 text-white px-4 py-2 rounded"><a href="portfolio.html#top">
+            <iconify-icon icon="mdi:arrow-up" width="24" height="24"></iconify-icon></a>
+        </button>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

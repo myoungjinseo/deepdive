@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans KR"', 'sans-serif'],
+                        heading: ['"Anton"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>서명진 이력서</title>
+</head>
+    <body >
+    <nav id ="top" class="bg-cover bg-center h-52 w-full  bg-black/50 flex items-center justify-between p-8" 
+    style="background-image: url(../image/white_bg.jpg)">
+        <div>
+            <h1 class="text-4xl font-bold">서명진</h1>
+            <p class="mt-4 text-lg">Backend developer</p>
+        </div>
+        <div>
+            <ul class="flex gap-4 ">
+                <li><a href="https://github.com/myoungjinseo"><iconify-icon icon="mdi:github"
+                            class="p-4 text-center h-16" width="50" height="50"></iconify-icon></a></li>
+                <li><a href="https://velog.io/@myoungjinseo/posts"><iconify-icon icon="mdi:book-open-variant"
+                            class="p-4 text-center h-16" width="50" height="50"></iconify-icon></a></li>
+                <li><a href="portfolio.html"><iconify-icon icon="mdi:account-box-outline" class="p-4 text-center h-16"
+                            width="50" height="50"></iconify-icon></a></li>
+            </ul>
+            <p class="mt-4">email : smjsih@naver.com</p>
+            <p>Phone : 010-8229-5673</p>
+        </div>
+    </nav>
+
+    <h1 class="text-4xl text-center mt-8">About Me</h1>
+    <div class="border-t border-dashed border-gray-400 my-4 mx-8"></div>
+    <section id="info" class="flex items-center space-x-12 px-8">
+        <img src="../image/myPhoto.jpg" alt="내 이미지" class="rounded-full mb-4 h-64" />
+        <div>
+            <h1 class="text-2xl font-bold">[자기소개]</h1>
+            <p>
+                저는 경력을 시작하려는 신입 개발자로, 빠르게 변화하는 기술 환경에 발맞춰 성장하고자 하는 열정을 가지고 있습니다. 앞으로 다양한 개발 기술을 습득하며, 경험을 바탕으로 설계 및 시스템
+                아키텍처 분야에도 집중하고 있습니다. 지속적으로 개발과 설계 역량을 키우고, 더 나은 개발자가 되기 위해 끊임없이 노력하겠습니다.
+            </p>
+            <h class="text-2xl font-bold"><br>[How I Work]</h>
+            <p>
+                1. 문제 해결 능력: 문제를 명확히 파악하고, 문제를 세분화하여 해결 가능한 단위로 나누는 것을 중요시합니다.
+                이를 통해 효율적인 문제 해결을 도모합니다.
+            </p>
+            <p>
+                2. 소통과 협업: 팀원 간의 원활한 소통을 위해 적극적으로 의견을 교환하며, 서로의 이해도를 높이기 위한 문서화
+                작업을 중요하게 생각합니다. 회의 전에 관련 자료를 준비하여 더욱 효율적인 논의를 이끌어 갑니다.
+            </p>
+            <p>
+                3. 효율적인 시간 관리: 프로젝트 진행 시 효율적인 시간 관리를 중요하게 여기며, 우선순위를 설정하여 작업을 처
+                리합니다. 특히, 프론트엔드 개발과 관련된 사항은 세심하게 질문하고, 함께 협력하여 최상의 결과를 도출하는
+                데 중점을 둡니다.
+            </p>
+        </div>
+    </section>
+
+    <h1 class="text-4xl text-center"><br><br>Projects</h1>
+    <div class="border-t border-dashed border-gray-400 my-4 mx-8"></div>
+    <div class="mx-8 overflow-x-auto max-w-full">
+        <table class="min-w-full table-auto text-sm border-collapse border border-gray-300">
+            <thead class="bg-gray-100">
+                <tr class="bg-gray-100">
+                    <th class="border px-8 py-2 text-left">프로젝트 명</th>
+                    <th class="border px-8 py-2 text-left">설명</th>
+                    <th class="border px-8 py-2 text-left">기간</th>
+                    <th class="border px-8 py-2 text-left">Github</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border px-8 py-2">MyPick Server</td>
+                    <td class="border px-8 py-2">건강 관리를 도와주는 어플리케이션</td>
+                    <td class="border px-8 py-2">2024.08 ~</td>
+                    <td class="border px-8 py-2"><a href="https://github.com/myoungjinseo/MyPick"
+                            class="hover:text-black text-blue-500">MyPickServer</a></td>
+                </tr>
+                <tr>
+                    <td class="border px-8 py-2">SilverPlate Server</td>
+                    <td class="border px-8 py-2">식단 조절을 위한 웹 어플리케이션</td>
+                    <td class="border px-8 py-2">2023.11 - 2024.02</td>
+                    <td class="border px-8 py-2"><a href="https://github.com/silver-plate/SilverPlate-BE"
+                            class="hover:text-black text-blue-500">SilverPlateServer</a></td>
+                </tr>
+                <tr>
+                    <td class="border px-8 py-2">FundFolio Server</td>
+                    <td class="border px-8 py-2">예산 관리 어플리케이션 (기업 과제형 프로젝트)</td>
+                    <td class="border px-8 py-2">2023.11</td>
+                    <td class="border px-8 py-2"><a href="https://github.com/myoungjinseo/FundFolio"
+                            class="hover:text-black text-blue-500">FundFolioServer</a></td>
+                </tr>
+                <tr>
+                    <td class="border px-8 py-2">YamYam Server</td>
+                    <td class="border px-8 py-2">지리기반 맛집 추천 웹 서비스</td>
+                    <td class="border px-8 py-2">2024.08 ~</td>
+                    <td class="border px-8 py-2"><a href="https://github.com/pre-onboarding/yamyam"
+                            class="hover:text-black text-blue-500">YamYamServer</a></td>
+                </tr>
+                <tr>
+                    <td class="border px-8 py-2">SocialMediaIntegratedFeed Server</td>
+                    <td class="border px-8 py-2">여러 SNS에서 게시물들을 나만의 해시태그를 통해 확인할 수 있는 통합 Feed 어플리케이션(기업 과제형 프로젝트)</td>
+                    <td class="border px-8 py-2">2023.10</td>
+                    <td class="border px-8 py-2"><a href="https://github.com/skhu-clock/skhu-clock-back"
+                            class="hover:text-black text-blue-500">SocialMediaIntegratedFeedServer</a></td>
+                </tr>
+                <tr>
+                    <td class="border px-8 py-2">SKHU-CLOCK Server</td>
+                    <td class="border px-8 py-2">교내 종강시계 및 다양한 정보를 주는 사이트</td>
+                    <td class="border px-8 py-2">2023.07 - 2023.09</td>
+                    <td class="border px-8 py-2"><a href="https://github.com/skhu-clock/skhu-clock-back"
+                            class="hover:text-black text-blue-500">SKHU-CLOCK Server</a></td>
+                </tr>
+                <tr>
+                    <td class="border px-8 py-2">DontWorry Server</td>
+                    <td class="border px-8 py-2">학교 폭력 피해자들에게 위안과 도움을 주려는 웹 어플리케이션</td>
+                    <td class="border px-8 py-2">2023.02 - 2023.04</td>
+                    <td class="border px-8 py-2"><a href="https://github.com/GDG-on-Campus-SKHU/2023-DontWorry-SolutionChallenge-BackEnd"
+                            class="hover:text-black text-blue-500">DontWorry Server</a></td>
+                </tr>
+                <tr>
+                    <td class="border px-8 py-2">FirstStep Server</td>
+                    <td class="border px-8 py-2">20살이 된 후배들을 위한 서비스 (해커톤)</td>
+                    <td class="border px-8 py-2">2023.01</td>
+                    <td class="border px-8 py-2"><a href="https://github.com/GDG-on-Campus-SKHU/1Team-FirstStep-BackEnd"
+                            class="hover:text-black text-blue-500">FirstStepServer</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h1 class="text-4xl font-bold px-8 text-center"><br><br>Skills</h1>
+    <div class="border-t border-dashed border-gray-400 my-4 mx-8"></div>
+    <h1 class="text-2xl font-bold px-8 ">BackEnd</h1>
+    <section id="skills" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 p-8">
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:spring" width="40" height="40"
+                class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">Spring Framework</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:spring" width="40" height="40"
+                class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">Spring JPA</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:spring" width="40" height="40"
+                class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">Spring batch</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:spring" width="40" height="40"
+                class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">Spring MVC</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="mdi:language-java" width="40" height="40"
+                class="mx-auto mb-2 text-orange-500"></iconify-icon>
+            <h3 class="font-semibold text-lg">JAVA</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:junit5" width="40" height="40"
+                class="mx-auto mb-2 text-red-500"></iconify-icon>
+            <h3 class="font-semibold text-lg">Junit5</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="" width="40" height="40"
+                class="mx-auto mb-2"></iconify-icon>
+            <h3 class="mb-2 text-blue-500 font-semibold text-lg" width="40" height="40" >QueryDSL</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="" width="40" height="40"
+                class="mx-auto mb-2"></iconify-icon>
+            <h3 class="mb-2 text-green-500 font-semibold text-lg" width="40" height="40" >Mockito</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="" width="40" height="40"
+                class="mx-auto mb-2"></iconify-icon>
+            <h3 class="mb-2 text-orange-500 font-semibold text-lg" width="40" height="40" >JACOMO</h3>
+        </div>
+        </section>
+
+
+
+        <h1 class="text-2xl font-bold px-8 ">DevOps</h1>
+        <section id="skills" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 p-8">
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:mysql" width="40" height="40"
+                class="mx-auto mb-2 text-blue-500"></iconify-icon>
+            <h3 class="font-semibold text-lg">MySQL</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:mariadb" width="40" height="40"
+                class="mx-auto mb-2 text-yellow-400"></iconify-icon>
+            <h3 class="font-semibold text-lg">MariaDB</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:redis" width="40" height="40"
+                class="mx-auto mb-2 text-orange-400"></iconify-icon>
+            <h3 class="font-semibold text-lg">redis</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="logos:aws" width="40" height="40" class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">AWS</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="logos:aws" width="40" height="40" class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">AWS RDS</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="logos:aws" width="40" height="40" class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">AWS ECR</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="logos:google-cloud" width="40" height="40"
+                class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">GCP</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="logos:google-cloud" width="40" height="40"
+                class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">GCS</h3>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="logos:docker" width="80" height="60" class="mx-auto mb-2 text-green-600"></iconify-icon>
+        </div>
+        <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="logos:docker" width="40" height="40" class="mx-auto mb-2 text-green-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">docker-compose</h3>
+        </div>
+    </section>
+
+    <h1 class="text-2xl font-bold px-8 ">Tools</h1>
+    <section id="skills" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 p-8">
+    <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:github" width="40" height="40"
+                class="mx-auto mb-2 text-black"></iconify-icon>
+            <h3 class="font-semibold text-lg">Github</h3>
+    </div>
+    <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:notion" width="40" height="40"
+                class="mx-auto mb-2 text-black"></iconify-icon>
+            <h3 class="font-semibold text-lg">Notion</h3>
+    </div>
+    <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:intellijidea" width="40" height="40"
+                class="mx-auto mb-2 text-blue-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">IntelliJ</h3>
+    </div>
+    <div class="p-4 border rounded shadow text-center">
+            <iconify-icon icon="simple-icons:discord" width="40" height="40"
+                class="mx-auto mb-2 text-purple-600"></iconify-icon>
+            <h3 class="font-semibold text-lg">Discode</h3>
+    </div>
+    </section>
+
+    
+    <h1 class="text-4xl font-bold px-8 text-center mt-8">Experience</h1>
+    <div class="border-t border-dashed border-gray-400 my-4 mx-8"></div>
+    <nav class="flex items-center justify-between px-8 flex-col">
+    
+        <div class="flex justify-between items-center w-full mt-4">
+        <p class="w-1/4"> 원티드 프리온보딩 인턴십</p>
+    
+  <ul class="w-2/4 justify-start list-disc list-inside">
+    <li>기업 과제형 프로젝트 진행 (FundFolio, YamYam, Social media integrated feed 프로젝트)</li>
+    <li>백엔드 강의 및 네트워크 강의</li>
+    <li>면접 및 이력서 강의</li>
+  </ul>
+  
+  <div class="w-1/4 text-right">
+    <p>주최 : 원티드</p>
+    <p>백엔드 개발자</p>
+    <p>2023.10 - 2024.01 </p>
+  </div>
+    </div>
+
+    <div class="flex justify-between items-center w-full mt-2">
+        <p class="w-1/4"> Google Developer Student Clubs</p>
+    
+  <ul class="w-2/4 justify-start list-disc list-inside">
+    <li>스터디(Spring, OOP 스터디) 및 과제를 통해 개발 공부</li>
+    <li>프로젝트, 해커톤, 구글 솔루션 대회 출전</li>
+  </ul>
+  
+  <div class="w-1/4 text-right">
+    <p>주최 : 구글</p>
+    <p>백엔드 개발자</p>
+    <p>2022.09 - 2023.06 </p>
+  </div>
+    </div>
+    
+    <div class="flex justify-between items-center w-full mt-2">
+        <p class="w-1/4"> 개발자들</p>
+    
+  <ul class="w-2/4 justify-start list-disc list-inside">
+    <li>2021년 안드로이드 개발자로 활동</li>
+    <li>2022년 백엔드 개발자로 활동</li>
+    <li>JPA 소규모 스터디 프로젝트 진행</li>
+    <li>프로젝트 진행</li>
+  </ul>
+  
+  <div class="w-1/4 text-right">
+    <p>주최 : 성공회 대학교</p>
+    <p>백엔드 개발자, 안드로이드 개발자</p>
+    <p>2021.08 - 2022.08</p>
+  </div>
+    </div>
+</nav>
+
+    <h1 class="text-4xl font-bold px-8 text-center mt-8">Awards</h1>
+    <div class="border-t border-dashed border-gray-400 my-4 mx-8"></div>
+<nav class="flex items-center justify-between px-8 flex-col">
+       <div class="flex justify-between items-center w-full mt-2"> <p class="w-1/4">2023.09</p><h3 class="w-2/4 text-1xl">교내 경진대회 장려상</h3><p class="w-1/4">주최 : 성공회대학교</p></div>
+        <div class="flex justify-between items-center w-full mt-2"><p class="w-1/4">2024.01</p>
+            <h3 class="w-2/4 text-1xl">GDSC 해커톤 베스트 서비스상</h3> <p class="w-1/4 ">주최 : GDSC</p></nav>
+</nav>
+
+    <h1 class="text-4xl font-bold px-8 text-center mt-8">Education</h1>
+    <div class="border-t border-dashed border-gray-400 my-4 mx-8"></div>
+    <div class="text-right my-2">
+        <h2 class="text-2xl">성공회대학교</h2>
+        <p>IT융합자율학부(소프트웨어공학과,정보통신공학과 복수전공)</p>
+        <p>2020.03 ~ 2024.02</p>
+    </div>
+    <footer class="bg-gray-900 text-white text-center p-4 mt-4 flex-col mt-8">
+        
+        <div class="flex items-center justify-between">
+        <div class="w-1/3"></div>    
+        <div class="items-center w-1/3">
+            <small>© 2025 서명진 포트폴리오</small>
+        <p>이메일: smjsih@naver.com</p>
+        </div>
+        <div class="w-1/3 flex justify-end">
+    <button class="bg-indigo-500 text-white px-4 py-2 rounded"><a href="introduce.html">
+      <iconify-icon icon="mdi:arrow-up" width="24" height="24"></iconify-icon></a>
+    </button>
+    </div>
+  </div>
+    </footer>
+</body>
+</html>
