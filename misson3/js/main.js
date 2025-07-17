@@ -17,6 +17,8 @@ const transText2 = document.getElementById("transText2");
 const nameInput2 = document.getElementById("nameInput2");
 const greetBtn2 = document.getElementById("greetBtn2");
 const greet2 = document.getElementById("greet2");
+const htmlEl = document.documentElement;
+const label = document.getElementById("mode-label");
 
 greetBtn.addEventListener("click", function () {
   greet.innerText = nameInput.value + "님, 안녕하세요!";
@@ -70,10 +72,6 @@ greetBtn2.addEventListener("click", function () {
       modal.classList.add("hide");
     });
   
- 
-
-  const htmlEl = document.documentElement;
-  const label = document.getElementById("mode-label");
 tailwind.config = {
     darkMode: 'class',
   };
